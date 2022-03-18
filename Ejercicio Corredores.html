@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corredores</title>
+    <script src="js/JavaScript.js"></script>
+</head>
+<body>
+    <form>
+		<input type="text" id="nombre" placeholder="Pon tu nombre. Mínimo 4 caracteres" onblur="validarNombre(this.value);">
+		<input type="email" id="email" placeholder="Pon tu email. " onblur="validarEmail(this.value);">
+		<br>
+		<input type="radio" id="sihacorrido" name="hacorrido" value="SI" onclick="haCorrido();">SI<br>
+		<input type="radio" name="hacorrido" value="NO" onclick="noHaCorrido();" checked>NO<br>
+		<div id="campo_corredor"></div>
+		<input type="button" onclick="indicarDatos()" value="Enviar">
+	</form>
+</body>
+</html>
